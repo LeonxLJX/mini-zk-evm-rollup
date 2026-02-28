@@ -1,0 +1,22 @@
+{
+  "name": "zk-evm-rollup-prover",
+  "version": "0.1.0",
+  "description": "ZK proof generation for zkEVM rollup",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "prove": "node dist/prove.js",
+    "verify": "node dist/verify.js",
+    "prove-batch": "node dist/prove-batch.js"
+  },
+  "dependencies": {
+    "@sp1-sdk/core": "^3.0.0",
+    "fs-extra": "^11.2.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/fs-extra": "^11.0.4",
+    "typescript": "^5.3.3"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "zk-evm-rollup",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "build:guest": "cd sp1-guest && cargo build --release",
+    "build:prover": "cd prover && npm run build",
+    "build:contracts": "cd contracts && npm run compile",
+    "deploy:contracts": "cd contracts && npm run deploy:local",
+    "test:contracts": "cd contracts && npm run test",
+    "generate-verifier": "cd contracts && npm run generate-verifier",
+    "build:core": "tsc --project tsconfig.json"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.21",
+    "next": "16.1.6",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "viem": "^2.46.3",
+    "wagmi": "^3.5.0",
+    "ethers": "^6.10.0",
+    "fs-extra": "^11.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/fs-extra": "^11.0.4",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,19 @@
+[package]
+name = "zk-evm-rollup-guest"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+
+[dependencies]
+sp1-zkvm = "3.0.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+hex = "0.4"
+alloy-primitives = "0.7"
+alloy-sol-types = "0.7"
+alloy-rlp = "0.3"
+
+[build-dependencies]
+sp1-build = "3.0.0"
